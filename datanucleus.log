@@ -1,0 +1,899 @@
+22:54:48,997 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:54:49,262 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+22:54:49,265 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+22:54:49,339 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+22:54:49,349 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+22:54:49,406 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+22:54:49,422 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+22:54:49,422 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+22:54:49,432 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+22:54:49,439 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+22:54:49,447 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+22:54:49,448 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+22:55:47,238 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:55:47,477 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+22:55:47,480 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+22:55:47,551 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+22:55:47,562 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+22:55:47,626 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+22:55:47,646 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+22:55:47,647 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+22:55:47,657 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+22:55:47,665 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+22:55:47,676 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+22:55:47,677 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+22:59:53,379 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+22:59:53,662 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+22:59:53,664 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+22:59:53,751 (main) ERROR [DataNucleus.Enhancer] - Input file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/test-classes/com/force/sample/snippets/model/SnippetFTest.class" doesnt exist!
+22:59:53,751 (main) ERROR [DataNucleus.Enhancer] - Input file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/test-classes/com/force/sample/snippets/test/TestContext.class" doesnt exist!
+22:59:53,798 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+22:59:53,807 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+22:59:53,867 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+22:59:53,888 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+22:59:53,889 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+22:59:53,897 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+22:59:53,898 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+23:00:50,523 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:00:50,730 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:00:50,733 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:00:50,767 (main) ERROR [DataNucleus.Enhancer] - Input file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/test-classes/com/force/sample/snippets/model/SnippetFTest.class" doesnt exist!
+23:00:50,768 (main) ERROR [DataNucleus.Enhancer] - Input file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/test-classes/com/force/sample/snippets/test/TestContext.class" doesnt exist!
+23:00:50,797 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:00:50,809 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:00:50,865 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:00:50,887 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:00:50,888 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:00:50,895 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:00:50,896 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+23:02:04,736 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:02:04,977 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:02:04,980 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:02:05,016 (main) ERROR [DataNucleus.Enhancer] - Input file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/test-classes/com/force/sample/snippets/model/SnippetFTest.class" doesnt exist!
+23:02:05,016 (main) ERROR [DataNucleus.Enhancer] - Input file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/test-classes/com/force/sample/snippets/test/TestContext.class" doesnt exist!
+23:02:05,053 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:02:05,066 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:02:05,120 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:02:05,148 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:02:05,149 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:02:05,158 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:02:05,159 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+23:03:39,802 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:03:40,025 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:03:40,027 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:03:40,095 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:03:40,104 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:03:40,172 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:03:40,188 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:03:40,189 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:03:40,199 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:03:40,206 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:03:40,214 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:03:40,215 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+23:12:17,686 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:12:17,887 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:12:17,890 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:12:17,957 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:12:17,967 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:12:18,039 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:12:18,057 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:12:18,057 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:12:18,066 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:12:18,074 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:12:18,081 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:12:18,082 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+23:12:36,479 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:12:36,712 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:12:36,714 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:12:36,777 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:12:36,786 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:12:36,852 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:12:36,868 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:12:36,869 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:12:36,879 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:12:36,885 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:12:36,891 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:12:36,892 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+23:13:28,952 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:13:29,176 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:13:29,178 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:13:29,244 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:13:29,253 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:13:29,317 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:13:29,337 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:13:29,337 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:13:29,347 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:13:29,355 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:13:29,362 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:13:29,363 (main) ERROR [DataNucleus.Enhancer] - DataNucleus Enhancer completed with an error. Please review the enhancer log for full details. Some classes may have been enhanced but some caused errors
+Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+org.datanucleus.exceptions.NucleusUserException: Errors were encountered when loading the specified MetaData files and classes. See the nested exceptions for details
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:482)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+Caused by: java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	... 3 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.newColumnMetaData(JPAAnnotationReader.java:2098)
+	at org.datanucleus.jpa.metadata.JPAAnnotationReader.processMemberAnnotations(JPAAnnotationReader.java:1352)
+	at org.datanucleus.metadata.annotations.AbstractAnnotationReader.getMetaDataForClass(AbstractAnnotationReader.java:171)
+	at org.datanucleus.metadata.annotations.AnnotationManagerImpl.getMetaDataForClass(AnnotationManagerImpl.java:135)
+	at org.datanucleus.metadata.MetaDataManager.loadAnnotationsForClass(MetaDataManager.java:2354)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:442)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+23:18:56,033 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:18:56,255 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:18:56,257 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:18:56,321 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:18:56,328 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:18:56,399 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:18:56,417 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:18:56,418 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:18:56,431 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:18:56,438 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:18:56,445 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:18:56,524 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/classes/com/force/sample/snippets/model/MyEntity.class" with enhanced definition
+23:18:56,529 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/classes/com/force/sample/snippets/model/Snippet.class" with enhanced definition
+23:18:56,530 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=194 ms, enhance=72 ms, total=266 ms. Consult the log for full details
+23:21:54,330 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:21:54,542 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:21:54,544 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:21:54,607 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:21:54,615 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:21:54,686 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:21:54,709 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:21:54,709 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:21:54,721 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:21:54,726 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:21:54,733 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:21:54,769 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+23:21:54,770 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+23:21:54,771 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=192 ms, enhance=30 ms, total=222 ms. Consult the log for full details
+23:29:56,682 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:29:56,893 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:29:56,895 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:29:56,964 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:29:56,973 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:29:57,045 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:29:57,064 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:29:57,065 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:29:57,077 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:29:57,084 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:29:57,091 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:29:57,133 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+23:29:57,134 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+23:29:57,134 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=200 ms, enhance=34 ms, total=234 ms. Consult the log for full details
+23:30:46,436 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:30:46,656 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:30:46,657 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:30:46,723 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:30:46,730 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:30:46,796 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:30:46,816 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:30:46,817 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:30:46,834 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:30:46,839 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:30:46,847 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:30:46,889 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+23:30:46,891 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+23:30:46,891 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=196 ms, enhance=34 ms, total=230 ms. Consult the log for full details
+23:31:56,686 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:31:56,931 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:31:56,934 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:31:57,010 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:31:57,021 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:31:57,087 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:31:57,107 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:31:57,108 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:31:57,120 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:31:57,128 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:31:57,133 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:31:57,179 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+23:31:57,181 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+23:31:57,181 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=202 ms, enhance=39 ms, total=241 ms. Consult the log for full details
+23:33:19,577 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:33:19,805 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:33:19,808 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:33:19,873 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:33:19,882 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:33:19,956 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:33:19,981 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:33:19,983 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:33:20,000 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:33:20,007 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:33:20,015 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:33:20,064 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+23:33:20,065 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+23:33:20,066 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=214 ms, enhance=38 ms, total=252 ms. Consult the log for full details
+23:34:02,002 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+23:34:02,243 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+23:34:02,246 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+23:34:02,316 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+23:34:02,327 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+23:34:02,336 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+23:34:02,403 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+23:34:02,429 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+23:34:02,430 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+23:34:02,445 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+23:34:02,452 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+23:34:02,458 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+23:34:02,504 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+23:34:02,506 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+23:34:02,507 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=215 ms, enhance=40 ms, total=255 ms. Consult the log for full details
+00:00:33,700 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:00:33,903 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:00:33,905 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:00:33,978 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:00:33,987 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:00:33,998 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:00:34,072 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:00:34,100 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:00:34,101 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:00:34,117 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:00:34,124 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:00:34,133 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:00:34,188 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:00:34,190 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:00:34,191 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=237 ms, enhance=44 ms, total=281 ms. Consult the log for full details
+00:02:19,889 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:02:20,112 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:02:20,115 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:02:20,191 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:02:20,202 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:02:20,214 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:02:20,292 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:02:20,322 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:02:20,323 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:02:20,344 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:02:20,353 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:02:20,361 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:02:20,407 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:02:20,409 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:02:20,409 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=251 ms, enhance=37 ms, total=288 ms. Consult the log for full details
+00:03:21,323 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:03:21,545 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:03:21,547 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:03:21,619 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:03:21,628 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:03:21,638 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:03:21,711 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:03:21,740 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:03:21,741 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:03:21,757 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:03:21,765 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:03:21,773 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:03:21,818 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:03:21,819 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:03:21,819 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=232 ms, enhance=35 ms, total=267 ms. Consult the log for full details
+00:04:13,772 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:04:13,982 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:04:13,985 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:04:14,048 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:04:14,056 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:04:14,075 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:04:14,132 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:04:14,151 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:04:14,152 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:04:14,167 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:04:14,172 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:04:14,178 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:04:14,227 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:04:14,229 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:04:14,230 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=198 ms, enhance=42 ms, total=240 ms. Consult the log for full details
+00:04:35,860 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:04:36,082 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:04:36,085 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:04:36,148 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:04:36,155 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:04:36,163 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:04:36,229 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:04:36,254 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:04:36,255 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:04:36,271 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:04:36,278 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:04:36,285 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:04:36,332 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:04:36,333 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:04:36,333 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=207 ms, enhance=37 ms, total=244 ms. Consult the log for full details
+00:12:15,155 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:12:15,379 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:12:15,382 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:12:15,454 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:12:15,464 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:12:15,473 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:12:15,544 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:12:15,574 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:12:15,575 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:12:15,594 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:12:15,602 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:12:15,612 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:12:15,659 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:12:15,661 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:12:15,661 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=236 ms, enhance=38 ms, total=274 ms. Consult the log for full details
+00:14:27,217 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:14:27,436 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:14:27,438 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:14:27,509 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:14:27,516 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:14:27,523 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:14:27,585 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:14:27,613 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:14:27,614 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:14:27,639 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:14:27,646 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:14:27,654 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:14:27,735 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:14:27,737 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:14:27,738 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=253 ms, enhance=41 ms, total=294 ms. Consult the log for full details
+00:14:54,922 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:14:55,149 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:14:55,152 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:14:55,221 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:14:55,227 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:14:55,236 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:14:55,299 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:14:55,327 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:14:55,328 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:14:55,347 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:14:55,355 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:14:55,362 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:14:55,410 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:14:55,412 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:14:55,412 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=217 ms, enhance=38 ms, total=255 ms. Consult the log for full details
+00:19:04,172 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:19:04,381 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:19:04,384 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:19:04,459 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:19:04,466 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:19:04,474 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:19:04,542 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:19:04,570 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:19:04,571 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:19:04,590 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:19:04,598 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:19:04,645 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:19:04,688 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:19:04,690 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:19:04,691 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=265 ms, enhance=36 ms, total=301 ms. Consult the log for full details
+00:19:42,230 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:19:42,442 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:19:42,444 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:19:42,534 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:19:42,543 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:19:42,553 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:19:42,611 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:19:42,636 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:19:42,637 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:19:42,653 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:19:42,653 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:19:42,653 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:19:42,653 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:19:42,653 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:19:42,653 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:19:42,661 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:19:42,668 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:19:42,669 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.editor_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.editor_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:19:42,670 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.editor_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.editor_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:19:42,671 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:19:42,671 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:19:42,672 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.home_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.home_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:19:42,673 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.home_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.home_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:19:42,673 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.tag.web.template_tag" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.tag.web.template_tag" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:19:42,724 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:19:42,726 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:19:42,726 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=235 ms, enhance=41 ms, total=276 ms. Consult the log for full details
+00:28:28,370 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:28:28,604 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:28:28,607 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:28:28,676 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:28:28,683 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:28:28,690 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:28:28,771 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:28:28,800 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:28:28,802 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:28:28,819 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:28:28,820 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:28:28,820 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:28:28,820 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:28:28,820 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:28:28,820 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:28:28,828 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:28:28,836 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:28:28,837 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.editor_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.editor_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:28:28,838 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.editor_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.editor_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:28:28,839 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:28:28,840 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:28:28,840 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.home_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.home_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:28:28,841 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.home_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.home_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:28:28,841 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.tag.web.template_tag" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.tag.web.template_tag" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:28:28,895 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:28:28,896 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:28:28,896 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=241 ms, enhance=43 ms, total=284 ms. Consult the log for full details
+00:32:21,714 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:32:21,915 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:32:21,917 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:32:21,993 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:32:22,002 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:32:22,011 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:32:22,078 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:32:22,109 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:32:22,110 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:32:22,127 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:32:22,127 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:32:22,127 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:32:22,127 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:32:22,128 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:32:22,128 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:32:22,135 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:32:22,141 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:32:22,142 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.editor_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.editor_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:22,143 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.editor_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.editor_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:22,143 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:22,144 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:22,144 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.home_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.home_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:22,144 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.home_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.home_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:22,145 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.tag.web.template_tag" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.tag.web.template_tag" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:22,186 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:32:22,187 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:32:22,188 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=233 ms, enhance=33 ms, total=266 ms. Consult the log for full details
+00:32:36,895 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+00:32:37,120 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+00:32:37,121 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+00:32:37,193 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:32:37,203 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:32:37,211 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:32:37,281 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+00:32:37,312 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:32:37,313 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+00:32:37,331 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:32:37,331 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+00:32:37,331 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+00:32:37,331 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+00:32:37,331 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+00:32:37,331 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+00:32:37,339 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+00:32:37,346 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+00:32:37,347 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.editor_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.editor_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:37,348 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.editor_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.editor_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:37,348 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:37,349 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.entity_005fdetail_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:37,350 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.home_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.home_jsp$Helper" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:37,350 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.WEB_002dINF.views.home_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.WEB_002dINF.views.home_jsp" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:37,351 (main) ERROR [DataNucleus.MetaData] - Class "org.apache.jsp.tag.web.template_tag" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.tag.web.template_tag" was not found in the CLASSPATH. Please check your specification and your CLASSPATH.
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:247)
+	at org.datanucleus.JDOClassLoaderResolver.classForName(JDOClassLoaderResolver.java:412)
+	at org.datanucleus.metadata.MetaDataManager.loadClasses(MetaDataManager.java:436)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.getFileMetadataForInput(DataNucleusEnhancer.java:791)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.enhance(DataNucleusEnhancer.java:582)
+	at org.datanucleus.enhancer.DataNucleusEnhancer.main(DataNucleusEnhancer.java:1316)
+
+00:32:37,397 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+00:32:37,399 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+00:32:37,399 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=237 ms, enhance=37 ms, total=274 ms. Consult the log for full details
