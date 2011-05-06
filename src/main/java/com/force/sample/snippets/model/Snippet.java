@@ -1,6 +1,7 @@
 package com.force.sample.snippets.model;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -21,7 +22,7 @@ public class Snippet {
 	String id;
 	String name;
 	String body;
-	@Enumerated
+	@Enumerated(EnumType.STRING)
 	SnippetType type;
 	
 	public String getId() {

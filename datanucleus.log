@@ -2258,3 +2258,45 @@ org.datanucleus.exceptions.ClassNotResolvedException: Class "org.apache.jsp.tag.
 09:37:05,998 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
 09:37:05,999 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
 09:37:05,999 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=223 ms, enhance=29 ms, total=252 ms. Consult the log for full details
+10:11:36,935 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+10:11:37,142 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+10:11:37,145 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+10:11:37,221 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+10:11:37,231 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+10:11:37,240 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+10:11:37,300 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+10:11:37,325 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+10:11:37,326 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+10:11:37,340 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+10:11:37,354 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.spring.SpringApplicationContext" has no MetaData or annotations.
+10:11:37,355 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+10:11:37,355 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+10:11:37,397 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+10:11:37,397 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+10:11:37,397 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+10:11:37,402 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+10:11:37,406 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+10:11:37,440 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+10:11:37,459 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/naamannewbold/Dev/workspaces/salesforce/snippets/target/classes/com/force/sample/snippets/model/Snippet.class" with enhanced definition
+10:11:37,459 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=263 ms, enhance=46 ms, total=309 ms. Consult the log for full details
+10:12:33,680 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer : Using ClassEnhancer "ASM" for API "JDO"
+10:12:33,918 (main) INFO  [DataNucleus.Persistence] - Property datanucleus.rdbms.stringDefaultLength unknown - will be ignored
+10:12:33,919 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 2.1.0-release) : Enhancement of classes
+10:12:33,987 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+10:12:33,997 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+10:12:34,004 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+10:12:34,065 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.MyEntity" has been specified with JPA annotations so using those.
+10:12:34,087 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+10:12:34,088 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet" has been specified with JPA annotations so using those.
+10:12:34,099 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+10:12:34,115 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.spring.SpringApplicationContext" has no MetaData or annotations.
+10:12:34,115 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.EntityController" has no MetaData or annotations.
+10:12:34,115 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.HomeController" has no MetaData or annotations.
+10:12:34,115 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.controller.SnippetController" has no MetaData or annotations.
+10:12:34,115 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.Snippet$SnippetType" has no MetaData or annotations.
+10:12:34,115 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.service.EntityService" has no MetaData or annotations.
+10:12:34,120 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.model.SnippetFTest" has no MetaData or annotations.
+10:12:34,125 (main) INFO  [DataNucleus.MetaData] - Class "com.force.sample.snippets.test.TestContext" has no MetaData or annotations.
+10:12:34,167 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.MyEntity" is already enhanced.
+10:12:34,169 (main) INFO  [DataNucleus.Enhancer] - Class "com.force.sample.snippets.model.Snippet" is already enhanced.
+10:12:34,169 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=210 ms, enhance=35 ms, total=245 ms. Consult the log for full details
