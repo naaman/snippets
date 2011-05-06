@@ -3,3 +3,6 @@
 .settings
 .springBeans
 target
+datanucleus.log
+deploy
+.DS_Store
