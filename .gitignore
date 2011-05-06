@@ -5,4 +5,5 @@
 target
 datanucleus.log
 deploy
+deploy.zip
 .DS_Store
