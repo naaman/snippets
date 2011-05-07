@@ -25,9 +25,10 @@
   </style>
 </head>
 <body>
-
-<pre id="editor">${snippet.body}</pre>
-    
+<form>
+<input type="submit" value="save" />
+<div id="editor" style="height:90%">${snippet.body}</div>
+   
 <script src="/ace/src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script src="/ace/src/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
 <script src="/ace/src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
@@ -40,6 +41,6 @@ window.onload = function() {
     editor.getSession().setMode(new JavaScriptMode());
 };
 </script>
-
+</form>
 </body>
 </html>
