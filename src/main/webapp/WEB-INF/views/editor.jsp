@@ -10,10 +10,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Editor</title>
 <style type="text/css" media="screen">
-body { //
-	overflow: hidden;
+body, form {
+	padding: 0px;
+	margin:0px;
+	//overflow: hidden;
 }
-
+.ui-corner-all {
+    border-radius: 0px !important;
+}
 #toolbar {
 	margin: 0px;
 	padding: 0px;
@@ -30,6 +34,8 @@ body { //
 #editor-tabs {
 	position: relative;
 	bottom: 0px;
+	padding: 0px;
+	border-width: 0px;
 }
 
 .tab-show {
@@ -54,7 +60,7 @@ body { //
 			</c:forEach>
 		</div>
 		
-		<div id="editor" style="width: 500px; height: 500px;"></div>
+		<div id="editor" style="width: 100%; height: 500px;"></div>
 
 		<script src="/static/ace/src/ace.js" type="text/javascript"
 			charset="utf-8"></script>
