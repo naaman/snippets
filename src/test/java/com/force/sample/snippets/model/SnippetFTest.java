@@ -23,7 +23,7 @@ public class SnippetFTest {
 		em = ctx.getEntityManager();
 	}
 	
-	@Test
+//	@Test
 	public void testSnippetQuery() {
 		List<Snippet> snippets = em.createQuery("Select o From Snippet o").getResultList();
 		Assert.assertEquals(0, snippets.size());
