@@ -18,6 +18,7 @@ body, form {
 .ui-corner-all {
     border-radius: 0px !important;
 }
+
 #toolbar {
 	margin: 0px;
 	padding: 0px;
@@ -26,14 +27,13 @@ body, form {
 
 #editor {
 	margin: 0px;
-	position: relative;
-	height: 100%;
+	position: absolute;
+	bottom: 0px;
+	//top: 0px;
 	width: 100%;
 }
 
 #editor-tabs {
-	position: relative;
-	bottom: 0px;
 	padding: 0px;
 	border-width: 0px;
 }
@@ -43,25 +43,6 @@ body, form {
 	border-width: 0px 0px 0px 0px;
 }
 </style>
-</head>
-<body>
-	<form>
-		<div id="toolbar">
-			<button id="save">save</button>
-		</div>
-		<div id="editor-tabs" class="tab-buttons-panel">
-			<ul>
-				<c:forEach var="snippet" items="${snippets}">
-					<li><a href="#${snippet.id}">${snippet.name}</a></li>
-				</c:forEach>
-			</ul>
-			<c:forEach var="snippet" items="${snippets}">
-				<div id="${snippet.id}" style="display: none;">${snippet.body}</div>
-			</c:forEach>
-		</div>
-		
-		<div id="editor" style="width: 100%; height: 500px;"></div>
-
 		<script src="/static/ace/src/ace.js" type="text/javascript"
 			charset="utf-8"></script>
 		<script src="/static/ace/src/theme-twilight.js" type="text/javascript"
@@ -75,24 +56,55 @@ body, form {
 			src="/static/jquery/js/jquery-1.5.1.min.js"></script>
 		<script type="text/javascript"
 			src="/static/jquery/js/jquery-ui-1.8.12.custom.min.js"></script>
+
 		<script>
-var editor;
-$('#editor-tabs').tabs({
-	select: function(event, ui) {
-		var editorText = ui.panel.innerHTML;
-		editor.getSession().setValue(editorText);
-		return true;
-	}
-});
-$("#save").button();
-$(window).load(function() {
-	editor = ace.edit("editor");
-    editor.setTheme("ace/theme/twilight");
-    var JavaScriptMode = require("ace/mode/javascript").Mode;
-    editor.getSession().setMode(new JavaScriptMode());
-	return true;
-});
-</script>
+			var editor;
+			
+			$(document).ready(function() {
+				// toolbar setup
+				$("#save").button();
+				
+				// init tabs
+				$("#editor-tabs").tabs({
+					select: function(event, ui) {
+						var editorText = ui.panel.innerHTML;
+						editor.getSession().setValue(editorText);
+						return true;
+					}
+				});
+				
+				// position editor below the toolbar
+				var toolbar = $("#toolbar");
+				var editorTop = toolbar.height() + toolbar.offset().top;
+    			$("#editor").offset({ top: editorTop, left: 0 });
+    			
+    			// setup ace editor
+				editor = ace.edit("editor");
+    			editor.setTheme("ace/theme/twilight");
+    			var JavaScriptMode = require("ace/mode/javascript").Mode;
+    			editor.getSession().setMode(new JavaScriptMode());
+    			
+    			return true;
+			});
+		</script>
+
+	</head>
+<body>
+	<form>
+		<div id="editor-tabs" class="tab-buttons-panel">
+			<ul>
+				<c:forEach var="snippet" items="${snippets}">
+					<li><a href="#${snippet.id}">${snippet.name}</a></li>
+				</c:forEach>
+			</ul>
+			<c:forEach var="snippet" items="${snippets}">
+				<div id="${snippet.id}" style="display: none;">${snippet.body}</div>
+			</c:forEach>
+		</div>
+		<div id="toolbar">
+			<button id="save"><span class="ui-icon ui-icon-disk"></span></button>
+		</div>
+		<div id="editor"></div>
 	</form>
 </body>
 </html>
