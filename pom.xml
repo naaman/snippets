@@ -13,6 +13,8 @@
 		<org.aspectj-version>1.6.9</org.aspectj-version>
 		<org.slf4j-version>1.6.1</org.slf4j-version>
 		<force.sdk.version>21.0.2-BETA</force.sdk.version>
+		<jetty.version>6.1.26</jetty.version>
+		<jetty.jsp-api.version>6.1.14</jetty.jsp-api.version>
 	</properties>
 
 	<dependencies>
@@ -181,7 +183,6 @@
 			<artifactId>spring-orm</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-
 		<!-- CGLIB -->
 		<dependency>
 			<groupId>cglib</groupId>
@@ -189,6 +190,33 @@
 			<version>2.2</version>
 			<scope>runtime</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty</artifactId>
+			<version>${jetty.version}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-util</artifactId>
+			<version>${jetty.version}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jsp-2.1</artifactId>
+			<version>${jetty.jsp-api.version}</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jsp-api-2.1</artifactId>
+			<version>${jetty.jsp-api.version}</version>
+			<type>jar</type>
+		</dependency>
+		
 	</dependencies>
 
 	<repositories>
@@ -261,7 +289,28 @@
 					</additionalProjectnatures>
 				</configuration>
 			</plugin>
-
+	        <plugin>
+	        	<groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-assembly-plugin</artifactId>
+	            <configuration>
+	                <archive>
+	                    <manifest>
+	                        <mainClass>com.force.sample.snippets.launcher.Launcher</mainClass>
+	                    </manifest>
+	                </archive>
+	           		<appendAssemblyId>false</appendAssemblyId>
+	                <descriptor>src/main/assembly/executableWarAssembly.xml</descriptor>
+	            </configuration>
+				<executions>
+					<execution>
+						<id>jar-with-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+	        </plugin>
 			<plugin>
         			<groupId>org.apache.maven.plugins</groupId>
         			<artifactId>maven-failsafe-plugin</artifactId>
